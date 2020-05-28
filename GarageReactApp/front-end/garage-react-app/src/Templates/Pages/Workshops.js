@@ -1,5 +1,5 @@
 import React, { useState,useEffect } from 'react';
-import CreateWorkshops from './CreateWorkshops';
+
 
 const Workshop = ({name, location}) => {
   return(
@@ -35,7 +35,6 @@ function Workshops() {
           />
         ))}
       </div>
-      <CreateWorkshops />
     </div>
   );
 }

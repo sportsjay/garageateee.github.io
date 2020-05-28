@@ -1,5 +1,5 @@
 import React, { useState,useEffect } from 'react';
-import CreateEvents from './CreateEvents';
+
 
 const Event = ({name, location}) => {
   return(
@@ -35,7 +35,6 @@ function Events() {
           />
         ))}
         </div>
-      <CreateEvents />
     </div>
   );
 }
