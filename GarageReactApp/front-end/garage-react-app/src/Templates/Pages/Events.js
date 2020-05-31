@@ -1,43 +1,43 @@
-import React, { useState,useEffect } from 'react';
-import CreateEvents from './CreateEvents';
+import React, { useState, useEffect } from "react";
+import CreateEvents from "./CreateEvents";
 
-const Event = ({name, location}) => {
-  return(
-    <div>
-      <p>{name}</p>
-      <p>{location}</p>
-    </div>
-  )}
+const Event = ({ name, location }) => {
+	return (
+		<div>
+			<p>{name}</p>
+			<p>{location}</p>
+		</div>
+	);
+};
 
 function Events() {
+	const [event, setEvent] = useState([]);
 
-  const [event, setEvent] = useState([]);
+	useEffect(() => {
+		getData();
+	}, []);
 
-  useEffect(() => {
-    getData();
-  }, []);
+	const getData = async () => {
+		const response = await fetch("http://localhost:4000/events-data");
+		const data = await response.json();
+		console.log(data);
+		setEvent(data);
+	};
 
-  const getData = async () => {
-    const response = await fetch('http://localhost:4000/events-data');
-    const data = await response.json();
-    console.log(data);
-    setEvent(data);
-  }
-
-  return (
-    <div>
-      <div>
-        {event.map(event => (
-          <Event 
-            key={event.id}
-            name={event.name} 
-            location={event.location} 
-          />
-        ))}
-        </div>
-      <CreateEvents />
-    </div>
-  );
+	return (
+		<div>
+			<div>
+				{event.map((event) => (
+					<Event
+						key={event.id}
+						name={event.name}
+						location={event.location}
+					/>
+				))}
+			</div>
+			<CreateEvents />
+		</div>
+	);
 }
 
 export default Events;
