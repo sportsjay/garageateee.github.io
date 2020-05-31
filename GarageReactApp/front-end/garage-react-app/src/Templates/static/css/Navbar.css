@@ -1,0 +1,22 @@
+.navbar {
+	background-color: rgba(28, 31, 86, 1);
+	/* background-color: #191970; */
+	padding-bottom: 15px;
+}
+
+.nav-link {
+	color: #fff !important;
+}
+
+.nav-link:hover {
+	color: #59bfe7 !important;
+}
+
+.nav-item {
+	margin: auto 20px auto 20px;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: 500;
+	font-size: 0.93em;
+	letter-spacing: 3px;
+	text-align: center;
+}

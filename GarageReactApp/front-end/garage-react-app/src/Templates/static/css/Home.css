@@ -1,0 +1,47 @@
+h1 {
+	font-weight: 600;
+}
+
+.box-container {
+	position: relative;
+	height: 80vh;
+	background: rgb(28, 31, 86);
+	background: linear-gradient(
+		180deg,
+		rgba(28, 31, 86, 1) 0%,
+		rgba(46, 41, 124, 1) 44%,
+		rgba(71, 63, 140, 1) 62%,
+		rgba(126, 118, 170, 1) 80%
+	);
+	/* background: rgb(25, 25, 112);
+	background: linear-gradient(
+		180deg,
+		rgba(25, 25, 112, 1) 0%,
+		rgba(33, 33, 150, 1) 31%,
+		rgba(63, 63, 212, 1) 60%,
+		#7b73a7 93%
+	); */
+}
+
+.header {
+	height: 50vh;
+	padding: 3% 10%;
+	color: #fff;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.header-image {
+	width: 80%;
+	margin-left: 15%;
+}
+
+.wave-container > svg {
+	display: block;
+	position: absolute;
+	bottom: 4px;
+	box-shadow: none;
+}
+
+.wave-container > svg:last-child {
+	bottom: -1px;
+}
