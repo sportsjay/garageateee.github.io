@@ -28,22 +28,22 @@ function NavigationBar() {
 				<ul class="navbar-nav ml-auto mr-4 mt-md-0">
 					<li class="nav-item">
 						<Link class="nav-link" to="/home">
-							Home
+							HOME
 						</Link>
 					</li>
 					<li class="nav-item">
 						<Link class="nav-link" to="/about-us">
-							About Us
+							ABOUT US
 						</Link>
 					</li>
 					<li class="nav-item">
 						<Link class="nav-link" to="/events">
-							Events
+							EVENTS
 						</Link>
 					</li>
 					<li class="nav-item">
 						<Link class="nav-link" to="/workshops">
-							Workshops
+							WORKSHOPS
 						</Link>
 					</li>
 				</ul>
