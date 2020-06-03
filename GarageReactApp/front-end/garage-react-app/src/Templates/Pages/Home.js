@@ -69,7 +69,7 @@ function Home() {
 			</svg>
 			<div class="cards-container">
 				<h1>Our Activities</h1>
-				<div class="row">
+				<div class="row mt-4">
 					<div class="col-12 col-md-6 d-flex justify-content-center">
 						<div class="card">
 							<input type="checkbox" />
@@ -98,14 +98,14 @@ function Home() {
 									Click on the button below to know more about our
 									events!
 								</p>
-								<button
-									type="button"
-									class="btn btn-outline-light mt-4"
+
+								<Link
+									class="link btn btn-outline-light mt-4"
+									to="/events"
+									role="button"
 								>
-									<Link class="nav-link" to="/events">
-										GARAGE@EEE EVENTS
-									</Link>
-								</button>
+									GARAGE@EEE EVENTS
+								</Link>
 							</div>
 						</div>
 					</div>
@@ -115,7 +115,7 @@ function Home() {
 							<div class="card-toggle">+</div>
 							<div class="card-content">
 								<div class="card-imgBox">
-									<img src="https://whuaoo.github.io/garage-webpage/img/events.png" />
+									<img src="https://whuaoo.github.io/garage-webpage/img/workshops.png" />
 								</div>
 								<hr></hr>
 								<div class="card-heading">
@@ -133,16 +133,28 @@ function Home() {
 									Click on the button below to know more about our
 									workshops!
 								</p>
-								<button
-									type="button"
-									class="btn btn-outline-light mt-4"
+
+								<Link
+									class="link btn btn-outline-light mt-4"
+									to="/workshops"
+									role="button"
 								>
-									<Link to="/workshops">GARAGE@EEE WORKSHOPS</Link>
-								</button>
+									GARAGE@EEE WORKSHOPS
+								</Link>
 							</div>
 						</div>
 					</div>
 				</div>
+			</div>
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 30 1440 150">
+				<path
+					fill="#9090da"
+					fill-opacity="1"
+					d="M0,96L60,90.7C120,85,240,75,360,85.3C480,96,600,128,720,122.7C840,117,960,75,1080,69.3C1200,64,1320,96,1380,112L1440,128L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"
+				></path>
+			</svg>
+			<div class="committee-container">
+				<h1>Our Committee</h1>
 			</div>
 			<Map />
 		</div>

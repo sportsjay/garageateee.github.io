@@ -2,6 +2,10 @@ div {
 	font-family: "Open Sans", sans-serif;
 }
 
+link {
+	text-decoration: none;
+}
+
 h1 {
 	line-height: 1.5em;
 	padding-bottom: 30px;
@@ -17,7 +21,7 @@ h4 {
 
 .title-container {
 	position: relative;
-	min-height: 80vh;
+	min-height: 83vh;
 	background: rgb(28, 31, 86);
 	background: linear-gradient(
 		180deg,
@@ -72,10 +76,15 @@ h4 {
 .cards-container {
 	min-height: 70vh;
 	color: #505962;
-	padding: 3% 10%;
+	padding: 4% 10%;
 	font-size: 0.8em;
 	text-align: center;
-	background-color: #d6d3e5;
+	background: rgb(144, 144, 218);
+	background: linear-gradient(
+		0deg,
+		rgba(144, 144, 218, 1) 0%,
+		rgba(214, 211, 229, 1) 42%
+	);
 }
 
 .card {
@@ -89,7 +98,7 @@ h4 {
 	border: none;
 }
 
-input,
+.card input,
 .card-toggle {
 	position: absolute;
 	width: 50px;
@@ -99,7 +108,7 @@ input,
 	z-index: 10;
 }
 
-input {
+.card input {
 	opacity: 0;
 }
 
@@ -115,7 +124,7 @@ input {
 	box-shadow: 0 0 0 0 #1d2058;
 }
 
-input:checked ~ .card-toggle {
+.card input:checked ~ .card-toggle {
 	box-shadow: 0 0 0 500px #1d2058;
 	transform: rotate(225deg);
 }
@@ -135,7 +144,7 @@ input:checked ~ .card-toggle {
 	left: 17.5px;
 	border-radius: 20px;
 	width: 90%;
-	height: 70%;
+	height: 72%;
 	overflow: hidden;
 }
 
@@ -144,16 +153,22 @@ input:checked ~ .card-toggle {
 	bottom: 75px;
 	left: 5%;
 	width: 90%;
-	border-width: 5px;
+	border-width: 3px;
 	border-radius: 20px;
 	border-color: #1d2058;
 }
 
 .card-heading {
 	position: absolute;
-	bottom: 21px;
+	bottom: 25px;
 	left: 40px;
 	color: #30363b;
+}
+
+.card-heading h2 {
+	font-size: 1.8em;
+	letter-spacing: 3px;
+	font-weight: 600;
 }
 
 .card-details {
@@ -165,7 +180,7 @@ input:checked ~ .card-toggle {
 	opacity: 0;
 }
 
-input:checked ~ .card-details {
+.card input:checked ~ .card-details {
 	opacity: 1;
 	transition-delay: 0.5s;
 }
@@ -181,6 +196,23 @@ input:checked ~ .card-details {
 	pointer-events: all;
 }
 
+.link {
+	padding: 10px 10px;
+	text-decoration: none;
+}
+
+.link:hover {
+	color: #1d2058;
+}
+
+.committee-container {
+	min-height: 70vh;
+	color: #505962;
+	padding: 4% 10%;
+	font-size: 0.8em;
+	text-align: center;
+}
+
 @media (max-width: 768px) {
 	h1 {
 		line-height: 1.2em;
@@ -191,6 +223,10 @@ input:checked ~ .card-details {
 	h4 {
 		font-size: 1.1em;
 		line-height: 1.5em;
+	}
+
+	.cards-container {
+		padding-top: 50px;
 	}
 
 	.title-container {

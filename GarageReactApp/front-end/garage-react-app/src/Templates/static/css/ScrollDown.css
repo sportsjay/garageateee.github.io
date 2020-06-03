@@ -20,8 +20,8 @@
 	display: block;
 	box-sizing: border-box;
 	border: none;
-	border-right: 3px solid #505962;
-	border-bottom: 3px solid #505962;
+	border-right: 3px solid #a7acb0;
+	border-bottom: 3px solid #a7acb0;
 	animation: animate 1s linear infinite;
 }
 
@@ -57,11 +57,11 @@
 
 @keyframes animate {
 	0% {
-		border-color: #505962;
+		border-color: #a7acb0;
 		transform: translate(0px, 0px);
 	}
 	20% {
-		border-color: #505962;
+		border-color: #a7acb0;
 		transform: translate(5px, 5px);
 	}
 	20.1%,
