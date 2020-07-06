@@ -1,0 +1,65 @@
+.committee-row .card {
+	position: relative;
+	margin: 40px 7.5px;
+	width: 250px;
+	height: 410px;
+	border-radius: 15px;
+	box-shadow: -15px -15px 15px rgba(255, 255, 255, 0.2),
+		15px 15px 15px rgba(0, 0, 0, 0.1);
+}
+
+.committee-row .card-img {
+	position: absolute;
+	top: 15px;
+	left: 31.25px;
+	border-radius: 50%;
+	width: 75%;
+	height: 187.5;
+	overflow: hidden;
+}
+
+.card-img > img {
+	width: 100%;
+}
+
+.committee-row .card-text {
+	position: absolute;
+	top: 225px;
+	left: 5.5%;
+	width: 90%;
+	font-size: 0.65em;
+	color: #1d2058;
+	letter-spacing: 1.5px;
+}
+
+.card-text > h4 {
+	color: #3285a7;
+	text-transform: uppercase;
+}
+
+.card > hr {
+	position: absolute;
+	bottom: 60px;
+	left: 25%;
+	width: 50%;
+	border-width: 2px;
+	border-color: rgb(228, 223, 223);
+}
+
+.card-favicon {
+	font-size: 1.5em;
+	width: 80%;
+	left: 10%;
+	position: absolute;
+	bottom: 27.5px;
+}
+
+.fab {
+	margin: 0 10px;
+	color: #1d2058;
+}
+
+a.fab:hover {
+	text-decoration: none;
+	color: #3da9d4;
+}

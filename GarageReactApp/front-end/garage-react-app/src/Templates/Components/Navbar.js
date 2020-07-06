@@ -1,7 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import logo from "../static/garage_logo.png";
+
 import "../static/css/Navbar.css";
+import logo from "../static/garage_logo.png";
 
 function NavigationBar() {
 	return (
