@@ -8,16 +8,18 @@ router.route('/').get((req, respo) => {
 });
 
 router.route('/add').post((req, respo) => {
-    const id = req.body.id;
-    const name = req.body.name;
-    // const date = Date.parse(req.body.date);
-    const location = req.body.location;
-    const description = req.body.description;
+    const id             = req.body.id;
+    const name           = req.body.name;
+    const dateStart      = req.body.dateStart;
+    const dateEnd        = req.body.dateEnd;
+    const location       = req.body.location;
+    const description    = req.body.description;
 
     const newWorkshop  = new Workshop({
         id,
         name,
-        // date,
+        dateStart,
+        dateEnd,
         location,
         description,
     });

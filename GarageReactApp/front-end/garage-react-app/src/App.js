@@ -15,8 +15,6 @@ import NavigationBar from './Templates/Components/Navbar';
 
 function App() {
 
-
-
   return (
     <div> 
         <Router> 
@@ -25,7 +23,7 @@ function App() {
         
         <div id="body">
           <Switch>
-            <Route path="/home" component={Home} />
+            <Route path="/" exact component={Home} />
             <Route path="/about-us" component={AboutUs} />
             <Route path="/events" component={Events} />
             <Route path="/workshops" component={Workshops} />

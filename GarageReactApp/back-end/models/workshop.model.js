@@ -13,7 +13,11 @@ let Workshop = new Schema({
         unique: true,
         trim: true,
     },
-    date: {
+    dateStart: {
+        type: String,
+        trim: true
+    },
+    dateEnd: {
         type: String,
         trim: true
     },

@@ -1,4 +1,4 @@
-import React, { useState,useEffect } from 'react';
+import React, { useState } from 'react';
 
 import CreateEvents from './CreateEvents';
 import CreateWorkshops from './CreateWorkshops';
@@ -36,7 +36,6 @@ const Admin = () => {
         username: username,
         password: password
     }
-    let form;
 
     const onChangeUsername = e => {
         setUsername(e.target.value);
@@ -60,6 +59,7 @@ const Admin = () => {
         setAuthentification(false);
     }
     
+    let form;
     if(authentification === true){
         form = 
         <div>
